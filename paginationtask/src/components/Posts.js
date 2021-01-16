@@ -1,5 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from "styled-components";
+
 export const Posts = ({ posts, loading }) => {
 
     if (loading) {
