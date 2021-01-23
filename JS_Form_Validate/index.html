@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+      }
+      .form_container {
+        display: flex;
+        border: 1px solid lightgray;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        height: 600px;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+     .radios{
+       margin: 10px;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       
+     }
+      .form_control {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      .form_control.success {
+        border-color: #2ecc71;
+      }
+      .form_control.error {
+        border-color: #e74;
+      }
+    </style>
+    <div class="form_container">
+      <h2>Contact Info</h2>
+      <form name="form" id="form">
+        
+        <div class="radios">
+        <input type="radio" name="choice" value="person" id="person" > Person </input>
+        <input type="radio" name="choice" id="company"  value="company"> Company </input>
+      </div>
+        
+        <label for="first_name">First Name : </label>
+        <input
+          type="text"
+          class="form_control"
+          name="first_name"
+          id="first_name"
+          placeholder="mahmoud "
+        />
+        <br />
+        <label for="last_name">Last Name : </label>
+        <input
+          type="text"
+          name="last_name"
+          id="last_name"
+          class="form_control "
+          placeholder="gonim"
+        />
+        <br />
+        <label for="company_name">Company Name : </label>
+        <input
+          class="form_control"
+          type="text"
+          name="company_name"
+          id="company_name"
+          placeholder="cegedim"
+        />
+        <br />
+        <label for="email">Email: </label>
+        <input
+          class="form_control"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="me@gmail.com "
+        />
+        <br />
+        <label for="phone">Phone Number : </label>
+        <input
+          type="text"
+          name="phone_number"
+          id="phone_number"
+          class="form_control"
+          placeholder="+20 "
+        />
+        <br />
+        <button type="button" class="btn" id="btn">Submit</button>
+      </form>
+    </div>
+
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
